@@ -7,7 +7,10 @@ The cluster must have the kube proxy and kube-dns running.
 ### Start all of the pods and services
 ```shell
 $ eval "$(docker-machine env default)"
-$ docker run --rm -ti --volumes-from gcloud-config google/cloud-sdk bash
+$ docker run --rm -ti -v `pwd`:/opt/src --volumes-from gcloud-config google/cloud-sdk bash
+$ cd /opt/src
+$ gcloud docker --authorize-only
+$ gcloud container clusters get-credentials influx-test-clustername-001 --zone europe-west1-b
 $ kubectl create -f deploy/kube-config/influxdb/
 ```
 
