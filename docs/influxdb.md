@@ -1,4 +1,4 @@
-# Run Heapster in a Kubernetes cluster with an InfluxDB backend and a Grafana UI
+# Run InfluxDB backend and a Grafana UI on Kubernetes
 
 ### Setup a Kubernetes cluster
 [Bring up a Kubernetes cluster](https://github.com/kubernetes/kubernetes), if you haven't already. Ensure that `kubecfg.sh` is exported.
