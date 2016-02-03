@@ -22,8 +22,6 @@ For production use, configure a LoadBalancer or if that is not available in your
 The default user name and password is 'admin' but you shouldn't need to login to access Grafana. In Grafana you should find a datasource already configured called InfluxDB. The URL for InfluxDB will be `http://localhost:8086`. Database name is 'k8s'. Default user name and password is 'root'. 
 Grafana documentation for InfluxDB [here](http://docs.grafana.org/datasources/influxdb/).
 
-Take a look at the [storage schema](storage-schema.md) to understand how metrics are stored in InfluxDB.
-
 Grafana is set up to auto-populate nodes and pods using templates.
 
 ## Troubleshooting guide
