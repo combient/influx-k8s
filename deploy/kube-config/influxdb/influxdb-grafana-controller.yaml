@@ -4,7 +4,7 @@ metadata:
   labels:
     name: influxGrafana
   name: influxdb-grafana
-  namespace: kube-system
+  namespace: timeseries
 spec:
   replicas: 1
   selector:
