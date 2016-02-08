@@ -1,5 +1,5 @@
 grafana:
-    image: grafana/grafana
+    image: monitoringartist/grafana-xxl
     ports:
         - "3000:3000"
     links:
