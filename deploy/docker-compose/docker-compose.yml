@@ -2,6 +2,15 @@ grafana:
     image: monitoringartist/grafana-xxl
     ports:
         - "3000:3000"
+#    environment:
+#    - GF_SECURITY_ADMIN_USER=admin
+#    - GF_SECURITY_ADMIN_PASSWORD=mypass
+    links:
+        - influxdb
+chronograf:
+    image: jbye/chronograf
+    ports:
+        - "10000:10000"
     links:
         - influxdb
 influxdb:
